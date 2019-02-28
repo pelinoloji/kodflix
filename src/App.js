@@ -1,12 +1,20 @@
 import React, { Component } from "react";
-import lordoftherings from "./lord-of-the-rings.jpg";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <img src={lordoftherings} alt="lord of the rings" />
+        <div className="container">
+          <div className="item">Six Feet Under</div>
+          <div className="item">Russian Doll</div>
+          <div className="item">Mr Robot</div>
+        </div>
+        <div className="container">
+          <div className="item">Angels in America</div>
+          <div className="item">BoJack Horseman</div>
+          <div className="item">WestWorld</div>
+        </div>
       </div>
     );
   }
