@@ -30,7 +30,7 @@ class App extends Component {
             <img src={sixFeetUnder} alt="Six Feet Under" />
           </div>
           <div className="item">
-            <img src={westWorld} alt="westworld" />
+            <img src={westWorld} alt="Westworld" />
           </div>
         </div>
       </div>
