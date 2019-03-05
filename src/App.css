@@ -6,26 +6,28 @@
   display: flex;
 }
 
-.item {
-  flex: 1;
-  position: relative;
-}
-
 img {
   width: 100%;
 }
 
+.item {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
 .overlay {
-  display: none;
+  transition: ease-in 1s;
   position: absolute;
-  top: 0;
+  top: 230px;
   width: 100%;
   background-color: azure;
-  opacity: .8;
+  opacity: 0;
 }
 
 .item:hover .overlay {
-  display: block;
+  top: 0;
+  opacity: 0.9;
 }
 
 @media only screen and (max-width: 600px) {
