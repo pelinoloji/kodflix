@@ -8,11 +8,26 @@
 
 .item {
   flex: 1;
+  position: relative;
 }
 
 img {
   width: 100%;
 }
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: azure;
+  opacity: .8;
+}
+
+.item:hover .overlay {
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
