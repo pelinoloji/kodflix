@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowseRouter as Router } from 'react-router-dom';
 import "./App.css";
 import "./Tvshows";
 import "./Technologies";
