@@ -11,14 +11,14 @@ export default function Technologies() {
   return (
     <div>
       <div className="container">
-        <Tvshows name="Angels in America" logo={angelsInAmerica} />
-        <Tvshows name="BoJack Horseman" logo={boJackHorseman} />
-        <Tvshows name="Mr Robot" logo={mrRobot} />
+        <Tvshows id='angelsinamerica' name="Angels in America" logo={angelsInAmerica} />
+        <Tvshows id='bojackhorseman' name="BoJack Horseman" logo={boJackHorseman} />
+        <Tvshows id='mrrobot' name="Mr Robot" logo={mrRobot} />
       </div>
       <div className="container">
-        <Tvshows name="Russian Doll" logo={russianDoll} />
-        <Tvshows name="Six Feet Under" logo={sixFeetUnder} />
-        <Tvshows name="Westworld" logo={westWorld} />
+        <Tvshows id='russiandoll' name="Russian Doll" logo={russianDoll} />
+        <Tvshows id='sixfeetunder' name="Six Feet Under" logo={sixFeetUnder} />
+        <Tvshows id='westworld' name="Westworld" logo={westWorld} />
       </div>
     </div>
   );
