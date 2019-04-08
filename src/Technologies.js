@@ -7,7 +7,7 @@ import sixFeetUnder from "./images/six-feet-under.jpg";
 import westWorld from "./images/westworld.jpg";
 import Tvshows from "./Tvshows";
 
-export default function Technologies() {
+export default function Gallery() {
   return (
     <div>
       <div className="container">

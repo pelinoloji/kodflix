@@ -3,7 +3,8 @@
 }
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 img {
@@ -11,9 +12,9 @@ img {
 }
 
 .item {
-  flex: 1;
   position: relative;
   overflow: hidden;
+  padding: 5px;
 }
 
 .overlay {
@@ -28,10 +29,4 @@ img {
 .item:hover .overlay {
   top: 0;
   opacity: 0.9;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
 }
