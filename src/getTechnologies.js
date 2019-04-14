@@ -6,7 +6,7 @@ import sixFeetUnder from "./images/six-feet-under.jpg";
 import westWorld from "./images/westworld.jpg";
 
 
-export default function getTechnologies() {
+function getTechnologies() {
   return [
     { id: "angelsinamerica", name: "Angels in America", logo: angelsInAmerica },
     { id: "bojackhorseman", name: "BoJack Horseman", logo: boJackHorseman },
@@ -16,3 +16,5 @@ export default function getTechnologies() {
     { id: "westworld", name: "Westworld", logo: westWorld }
   ];
 }
+
+export default getTechnologies;

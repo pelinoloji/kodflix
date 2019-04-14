@@ -3,7 +3,7 @@ import Tvshows from "./Tvshows";
 import getTechnologies from './getTechnologies';
 
 
-export default function Technologies() {
+ function Technologies() {
   return (
     <div>
       <div className="container">
@@ -21,3 +21,4 @@ export default function Technologies() {
   );
 }
 
+export default Technologies;
