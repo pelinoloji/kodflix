@@ -4,7 +4,7 @@ import "./App.css";
 import "./Tvshows";
 import "./Technologies";
 import Technologies from "./Technologies";
-import Details from "./Details";
+import Details from "./Details/Details.js";
 import NotFound from "./NotFound";
 
 class App extends Component {
