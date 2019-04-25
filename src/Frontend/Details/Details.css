@@ -1,0 +1,14 @@
+.container .text {
+  margin: 5px 70px 0 50px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.image {
+  width: 60%;
+  margin-left: 80px;
+}
+
+.container {
+  margin-left: 50px;
+}
