@@ -1,14 +1,14 @@
 import React from "react";
 import Tvshows from "./Tvshows";
-import getTechnologies from './getTechnologies';
+import getShows from './getShows';
 
 
- function Technologies() {
+ function Shows() {
   return (
     <div>
       <div className="container">
         {
-          getTechnologies().map(tvshows => (
+          getShows().map(tvshows => (
           <Tvshows 
           key={tvshows.id}
           id={tvshows.id} 
@@ -21,4 +21,4 @@ import getTechnologies from './getTechnologies';
   );
 }
 
-export default Technologies;
+export default Shows;

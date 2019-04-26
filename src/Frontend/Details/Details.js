@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
-import getTechnologies from "../getTechnologies";
+import getTechnologies from "../getShows";
 import "./Details.css";
 
 class Details extends Component {

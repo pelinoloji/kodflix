@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import "./Tvshows";
 import "./Technologies";
-import Technologies from "./Technologies";
+import Shows from "./Shows";
 import Details from "./Details/Details.js";
 import NotFound from "./NotFound";
 
@@ -13,7 +13,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Switch>
-            <Route exact path="/" component={Technologies} />
+            <Route exact path="/" component={Shows} />
             <Route exact path="/not-found" component={NotFound} />
             <Route exact path="/:showId" component={Details} />
           </Switch>
