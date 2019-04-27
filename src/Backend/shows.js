@@ -1,4 +1,4 @@
-module.exports = function tvshows() {
+module.exports = function shows() {
   return [
     {
       id: "angelsinamerica",
