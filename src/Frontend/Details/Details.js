@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
-import getTechnologies from "../getShows";
 import "./Details.css";
 
 class Details extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       shows: {}
     };
@@ -14,8 +13,23 @@ class Details extends Component {
   componentDidMount() {
     //special function
     let showId = this.props.match.params.showId;
-    let shows = getTechnologies().find(show => show.id === showId);
-    this.setState({ shows });
+    
+    fetch('/rest/shows')
+    .then(res => res.json())
+    .then(shows => {
+      return shows
+        .find(show => {
+          return show.id === showId
+        })
+    })
+    .then(show => {
+        const {id, name, logo, details} = show;
+        this.setState({
+        id: id,
+        name: name,
+        logo: logo,
+        details: details
+      })})
   }
 
   render() {
@@ -24,14 +38,11 @@ class Details extends Component {
     } else {
       return (
         <div className="Details">
-          <h1>{this.state.shows.name}</h1>
+          <h1>{this.state.name}</h1>
           <div className="container">
-            <div className="text">{this.state.shows.details}</div>
-            <img
-              className="image"
-              src={this.state.shows.logo}
-              alt={this.state.shows.name}
-            />
+            <div className="text">{this.state.id}</div>
+            <div className="text">{this.state.details}</div>
+            <img src={require(`./../common/images/${this.props.match.params.showId}.jpg`)} alt={this.props.match.params.showId} className="image" />
           </div>
           <br />
           <br />

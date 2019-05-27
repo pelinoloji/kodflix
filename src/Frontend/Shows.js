@@ -1,23 +1,18 @@
 import React from "react";
 import Tvshows from "./Tvshows";
-import getShows from "./getShows";
 
 class Shows extends React.Component {
   componentDidMount() {
     fetch("/rest/shows")
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-      });
+    .then(res => res.json())
+    .then(shows => this.setState ({ shows }));
   }
 
   render() {
     return (
       <div>
         <div className="container">
-          {getShows().map(tvshows => (
+          { this.state.shows.map( tvshows => (
             <Tvshows
               key={tvshows.id}
               id={tvshows.id}
