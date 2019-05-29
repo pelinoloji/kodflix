@@ -2,6 +2,11 @@ import React from "react";
 import Tvshows from "./Tvshows";
 
 class Shows extends React.Component {
+  constructor() {
+    super();
+    this.state = { shows: [] }
+  }
+  
   componentDidMount() {
     fetch("/rest/shows")
     .then(res => res.json())
